@@ -10,10 +10,11 @@ export default function CardProduto( {nome, descricao, preco, imagem, id, peso}:
         <div key = {id} className="card_produto">
             <img src={(imagem.length > 0) ? `http://localhost:3000/static/${imagem}` : bolo_default} alt="Uma fatia de bolo de chocolate belga" />
             <h2>{nome}</h2>
-            <p>{(descricao.length > 0) ? descricao: "Descrição não informada"}</p>
+            <p>{(descricao.length > 0) ? descricao : "Descrição não informada"}</p>
             <div>
                 <span>{formatosService.PrecoBR(preco) }</span> 
-                <span>{(peso != null) ? formatosService.PesoEmKg(peso) : "qntd não informada"}</span>
+                <br />
+                <span>{(peso !=null) ? formatosService.PesoEmKg(peso) : "qntd não informada"} </span>
             </div>               
         </div>
     )

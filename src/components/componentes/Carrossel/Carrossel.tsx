@@ -1,6 +1,6 @@
-import banner_1 from '../../assets/imgs/banner.png';
-import banner_2 from '../../assets/imgs/banner2.png';
-import banner_3 from '../../assets/imgs/banner3.png';
+import banner_1 from '../../../assets/imgs/banner.png';
+import banner_2 from '../../../assets/imgs/banner2.png';
+import banner_3 from '../../../assets/imgs/banner3.png';
 export default function Carrossel() {
 
     
